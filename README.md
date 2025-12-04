@@ -13,7 +13,7 @@ maya uwaydat\
 + vader: vader is a sentiment analysis tool specialised for social media posts, but it has been used for news articles as well. further insight: [analysis of vader vs. textblob](https://jds-online.org/journal/JDS/article/1441/info)
 #### data
 + the data was fetched from the nyt developer api. the 'raw data' included in this project include the date the article was published, the article's headline, and the article's snippet (the small piece of text right under the header giving a brief description of what the full article is about). 
-+ ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake.  
++ ALL new york times articles from 1924 to 2024 released in january or june were included in the study. 1928 was the year of the first television broadcast ([source](https://education.cfr.org/media/history-communications)), so including the last century's worth of data made sense for interpretability's sake. 
 + the article headline and article snippet were fed into a vader sentiment analyser to give us a) the vader sentiment score for the headline of each article, and b) the vader sentiment score for the snippet of each article. 
 + the final data table included: year and month (as a timestamp), average sentiment score for headlines for each given time period, average sentiment scores for snippets for each given time period. 
 #### limitations
