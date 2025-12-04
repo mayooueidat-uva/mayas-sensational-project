@@ -8,7 +8,7 @@ maya uwaydat\
 + this still concerns me because, well...it becomes a reflection of how much the news actually serves its role of constructively informing the public. in high school, i did quite the bit of research about the symbiotic relationship between terrorism and journalism; terrorist attacks don't cause too many deaths, [but are overrepresented in news](https://ourworldindata.org/does-the-news-reflect-what-we-die-from), because news is a for-profit enterprise that needs to keep your attention and terrorism is morbidly entertaining to people. when news outlets use stories to shock instead of neutrally inform, it provides a distorted picture of reality. 
 #### tools in the pipeline 
 + prefect: allows for easy orchestration of tasks. the data had to be pulled from the api, transformed, and shoved through a sentiment analysis algorithm; furthermore, for the sake of more robust analysis, i had to create a line plot. prefect allows me to do this all with one file, all in one go. 
-+ pandas dataframes: for easy storage of data from the api before transformation.
++ pandas dataframes: for easy storage of data from the api before transformation in a way that the api could understand.
 + duckdb/sql: i needed a more permanent place to store data that i fetched from api calls so i wouldn't have to re-fetch everything any time i had to go back and re-edit my code. duckdb provided this structure. 
 + vader: vader is a sentiment analysis tool specialised for social media posts, but it has been used for news articles as well. further insight: [analysis of vader vs. textblob](https://jds-online.org/journal/JDS/article/1441/info)
 #### data
